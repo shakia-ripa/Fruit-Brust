@@ -20,8 +20,9 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-color': '#B68C5A',
-                        'dark-color': '#414040', 'faded-color': '#707070',
+                        'primary-color': '#F85559',
+                        'dark-color': '#121212',
+                        'faded-color': '#12121299',
                     }
                 }
             }
@@ -36,56 +37,363 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- <header class="md:container md:mx-auto font-lato">
+        <nav class="my-6 md:my-8 lg:my-12">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+
+                <div class="navbar-start lg:flex md:flex hidden">
+
+                    <div class="navbar-start ">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar-start flex-1 md:navbar-center ">
+                    <img src="./images/logo.png">
+                    <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end ">
+                    <div class="form-control invisible md:visible ">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    </div>
                     <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden md:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+                                    d="M4 6h16M4 12h16M4 18h7" />
                             </svg>
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li tabindex="0">
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn">Button</a>
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <main>
+        <!-- deals section -->
+        <section class="px-4 md:container md:mx-auto lg:mx-auto  font-lato">
+            <div class="sapace flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left md:mb-11">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-dark-color">Deal of the day</h2>
+
+                    <p class="mt-2 text-base font-normal md:font-medium text-faded-color md:w-2/3 ">Contrary to popular
+                        belief, is not simply random text. It has roots in a piece of classical Latin literature from 45
+                        BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max  my-5">
+                        <div class="relative">
+                            <div class="flex flex-col p-2 rounded-box text-neutral-content">
+                                <span class="countdown text-4xl md:text-5xl text-dark-color font-extrabold">
+                                    <span style="--value:29;"></span>
+                                </span>
+                                <span class="font-lato text-faded-color">Days</span>
+                            </div>
+                            <svg class="absolute bottom-10 -right-5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="relative">
+                            <div class="flex flex-col p-2 rounded-box text-neutral-content">
+                                <span class="countdown text-4xl md:text-5xl text-dark-color font-extrabold">
+                                    <span style="--value:15;"></span>
+                                </span>
+                                <span class="font-lato text-faded-color">Hours</span>
+                            </div>
+                            <svg class="absolute bottom-10 -right-5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="relative">
+                            <div class="flex flex-col p-2 rounded-box text-neutral-content">
+                                <span class="countdown text-4xl md:text-5xl text-dark-color font-extrabold">
+                                    <span style="--value:25;"></span>
+                                </span>
+                                <span class="font-lato text-faded-color">Minutes</span>
+                            </div>
+                            <svg class="absolute bottom-10 -right-5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                                    stroke="#121212" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="flex flex-col p-2 rounded-box text-neutral-content">
+                            <span class="countdown text-4xl md:text-5xl text-dark-color font-extrabold">
+                                <span style="--value:08;"></span>
+                            </span>
+                            <span class="font-lato text-faded-color">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- card-1 -->
+                <div class="card border-2 border-[#12121219]">
+                    <figure class="px-6 pt-7">
+                        <img src="./images/fruit6.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title mt-6 text-xl font-bold text-dark-color">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="my-4 text-base font-medium text-faded-color">Apples</p>
+                        <div class="mb-4 rating rating-sm">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn border-none bg-white text-primary-color"
+                                onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div>
+                                        <figure class="px-3 pt-4">
+                                            <img src="./images/fruit9.png" alt="Fruits" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title mt-1 text-xl font-bold text-dark-color">Apple</h2>
+                                            <hr>
+                                            <p class="my-2 text-base font-medium text-faded-color">Professional
+                                                employees are there for you to pick the most amazing and fresh fruits.
+                                            </p>
+                                            <div class="mb-4 rating rating-sm">
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center gap-12">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button
+                                                class="btn bg-white border-primary-color text-primary-color">Close</button>
+                                            <button class="btn bg-primary-color text-white">Buy Now</button>
+                                        </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card border-2 border-[#12121219]">
+                    <figure class="px-6 pt-7">
+                        <img src="./images/fruit7.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title mt-6 text-xl font-bold text-dark-color">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="my-4 text-base font-medium text-faded-color">Orange</p>
+                        <div class="mb-4 rating rating-sm">
+                            <div class="mb-4 rating rating-sm">
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" checked />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                                <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn border-none bg-white text-primary-color"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div>
+                                        <figure class="px-3 pt-4">
+                                            <img src="./images/fruit7.png" alt="Fruits" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title mt-1 text-xl font-bold text-dark-color">Orange</h2>
+                                            <hr>
+                                            <p class="my-2 text-base font-medium text-faded-color">Professional
+                                                employees are there for you to pick the most amazing and fresh fruits.
+                                            </p>
+                                            <div class="mb-4 rating rating-sm">
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center gap-12">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button
+                                                class="btn bg-white border-primary-color text-primary-color">Close</button>
+                                            <button class="btn bg-primary-color text-white">Buy Now</button>
+                                        </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card border-2 border-[#12121219]">
+                    <figure class="px-6 pt-7">
+                        <img src="./images/fruit8.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title mt-6 text-xl font-bold text-dark-color">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="my-4 text-base font-medium text-faded-color">Red Dragon</p>
+                        <div class="mb-4 rating rating-sm">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn border-none bg-white text-primary-color"
+                                onclick="my_modal_3.showModal()">Details</button>
+                            <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div>
+                                        <figure class="px-3 pt-4">
+                                            <img src="./images/fruit8.png" alt="Fruits" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title mt-1 text-xl font-bold text-dark-color">Red Dragon
+                                            </h2>
+                                            <hr>
+                                            <p class="my-2 text-base font-medium text-faded-color">Professional
+                                                employees are there for you to pick the most amazing and fresh fruits.
+                                            </p>
+                                            <div class="mb-4 rating rating-sm">
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center gap-12">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button
+                                                class="btn bg-white border-primary-color text-primary-color">Close</button>
+                                            <button class="btn bg-primary-color text-white">Buy Now</button>
+                                        </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="card border-2 border-[#12121219]">
+                    <figure class="px-6 pt-7">
+                        <img src="./images/fruit9.png" alt="Fruits" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title mt-6 text-xl font-bold text-dark-color">12.90$ - 18.85$</h2>
+                        <hr>
+                        <p class="my-4 text-base font-medium text-faded-color">Banana</p>
+                        <div class="mb-4 rating rating-sm">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="card-actions">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn border-none bg-white text-primary-color"
+                                onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+                                    <div>
+                                        <figure class="px-3 pt-4">
+                                            <img src="./images/fruit9.png" alt="Fruits" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title mt-1 text-xl font-bold text-dark-color">Banana</h2>
+                                            <hr>
+                                            <p class="my-2 text-base font-medium text-faded-color">Professional
+                                                employees are there for you to pick the most amazing and fresh fruits.
+                                            </p>
+                                            <div class="mb-4 rating rating-sm">
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" checked />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                                <input type="radio" name="rating-6"
+                                                    class="mask mask-star-2 bg-[#F85559]" />
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center gap-12">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button
+                                                class="btn bg-white border-primary-color text-primary-color">Close</button>
+                                            <button class="btn bg-primary-color text-white">Buy Now</button>
+                                        </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-11 mb-20">
+                <button class="btn bg-primary-color text-white">Shop All</button>
+            </div>
+        </section>
+
+        <!-- team section -->
+        <section class="px-4 container md:mx-auto lg:mx-auto  font-lato">
+            <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="text-center">
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-dark-color">Deal of the day</h2>
+                        <p class="mt-2 text-base font-normal md:font-medium text-[#FFF] md:w-2/3 ">Contrary to popular
+                            belief, is not simply random text. It has roots in a piece of classical Latin literature from 45
+                            BC, making it over 2000 years old.</p>
+                    </div>
+                </div>
+              </div>
+
+        </section>
 
     </main>
 
